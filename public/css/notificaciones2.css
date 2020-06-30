@@ -1,0 +1,190 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,700);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+.alert {
+  padding: 20px;
+  background-color: #679bf1; 
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.items {
+
+  display: flex;
+  flex-direction: column;
+  border-color: #2c90c6;
+   border-top: 2px solid #2c90c6;
+  border-right: 1px solid #2c90c6;
+  border-left: 1px solid #2c90c6;
+  border-bottom: 2px solid #2c90c6;
+  margin: 0 auto;
+  border-radius: 5px 5px 0 0;
+
+  padding: 10px;
+  /*counter-reset: done-items undone-items;*/
+}
+
+.srch{
+  
+margin-left: 5%;
+  border-radius: 3px;
+  border-color: #2c90c6;
+  background-color:#f8f8f8; 
+  width: 10%;
+  height: 5%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+.div-search{
+  margin-bottom: 0 auto;
+}
+
+h2::before {
+  margin-top: 2000px;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: -20px;
+  width: 5px;
+  background-color: #435757;
+}
+
+h2::after {
+  display: block;
+  float: right;
+  font-weight: normal;
+}
+
+.done {
+  order: 1;
+}
+
+.done::after {
+  content: ' (' counter(done-items) ')';
+}
+
+.undone {
+  order: 3;
+}
+
+.undone::after {
+  content: ' (' counter(undone-items) ')';
+}
+
+/* hide inputs offscreen, but at the same vertical positions as the correpsonding labels, so that tabbing scrolls the viewport as expected */
+input {
+  display: block;
+  height: 53px;
+  margin: 0 0 -53px -9999px;
+  order: 4;
+  outline: none;
+  counter-increment: undone-items;
+}
+
+input:checked {
+  order: 2;
+  counter-increment: done-items;  
+}
+
+label {
+  /*display: block;*/
+  position: relative;
+  padding: 15px 0 15px 45px;
+  /*border-top: 1px dashed #fff;*/
+  order: 4;
+  cursor: pointer;
+  animation: undone .5s;
+}
+
+label::before {
+  
+  /*display: block;*/
+  /*position: absolute;*/
+  top: 11px;
+  left: 10px;
+  /*font: 1.5em 'FontAwesome';*/
+}
+
+label:hover, input:focus + label {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+input:checked + label {
+  order: 2;
+  animation: done .5s;
+}
+
+input:checked + label::before {
+  content: url(/img/correcto.png); /* circle checkmark */
+  width: 3px;
+  height: 3px;
+ background-repeat: no-repeat;
+}
+
+@keyframes done {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
+  }
+}
+
+/*@keyframes undone {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
+  }
+}
+
+*/
+
+
+.btnNoti{
+  background-color: #0686d9; 
+ float:right;
+ margin-top: -11%;
+ margin-right: 28%;
+ width: 15%;
+ height:8%;
+}
+
+.contenido-mensaje{
+  margin-left: 5%;
+  border-radius: 3px;
+  border-color: #2c90c6;
+  background-color:#f8f8f8; 
+  width: 50%;
+  height: 20%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}

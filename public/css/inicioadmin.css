@@ -1,0 +1,303 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+.borde{
+    border: 0;
+    
+} 
+ 
+.check{    
+    width: 50px;
+    text-align: center;
+}
+
+.cerrarNoti{   
+    width: 15px;          
+     background: #ed6c6c;
+     color: #000;   
+     border-radius: 25px 25px 25px 25px; 
+     margin-left: 100%;
+     text-decoration: none;
+     font-size: 20px;
+}
+.mensaje {  
+  text-align: left;
+  padding-left: 10px;
+  margin-top: -10px; 
+}
+.caja { 
+width: 70%; 
+height: auto;
+margin-left: 15%;
+text-align: center;
+font-size: 21px;
+color: #000;
+background: #b2d4d8;
+border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+border: 2px solid #5878ca;
+margin-bottom: 20px;
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; }
+
+}
+*/
+
+p {
+    text-align: center;
+}
+
+nav {
+    margin: 5px;
+    background-color: #2175bc;
+  box-shadow: 0px 3px 20px 3px #162433;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    position: relative;
+    text-align: center;
+}
+    
+nav ul li {
+    display:inline-block;
+    background-color: #2175bc;
+    font-family: Open Sans;
+    }
+
+nav a {
+    top: -20;
+    display:block;
+    padding:0 20px; 
+    color:#FFF;
+    font-size:16px;
+    line-height: 60px;
+    text-decoration:none;
+}
+
+nav a:hover { 
+    background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+    display: none;
+    position: absolute; 
+    top: 60px; /* the height of the main nav */
+}
+    
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display:inherit;
+}
+    
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+/* Second, Third and more Tiers */
+nav ul ul ul li {
+    position: relative;
+    top:60px; 
+    left:170px;
+}
+
+    
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: -7px 0 0px 7px;
+    vertical-align: middle;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    width: 20px;
+    padding: 10px;
+    height: 10px;
+    margin: 55px;
+    position: relative;
+}
+
+/* Ok, HTML markup is complete */
+/* submit button will also be the same but with a different color. We'll style the label and the submit input */
+/* a faky 3D look */
+
+.submit {
+    display: none;  
+}
+
+form .icon, form .submit {
+    width: 25px;
+    height: 25px;
+    background: #d75813;
+    display: block;
+    position: absolute;
+    top: 10;
+    right: 10px;
+    
+}
+
+
+/* Now, we'll create a search (magnifying glass) icon using pseudo elements */
+form .icon:after, form .submit:after  {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid white;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+}
+
+form .icon:before, form .submit:before {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 2px;
+    background: white;
+    transform: rotate(-35deg);
+    top: 12px;
+    left: 15px;
+}
+
+/* Styling the input */
+
+.bodyblanco{
+  font-family: 'Open Sans', sans-serif;
+  background: #fdfefe ;
+}
+
+.buttonVer{
+  cursor:pointer; 
+  display:inline-block;
+  float:left;
+  width:250px;
+  height:60px;
+  margin-top:-10px;
+  border:none;
+  font-family: 'Open Sans', sans-serif;
+  text-transform:uppercase;
+  color:#fff;
+  -webkit-transition:.5s;
+  transition:.5s;
+  &:nth-of-type(1){
+    background:#673ab7;
+  }
+  &:nth-of-type(2){
+    background:#ff5722;
+  }
+
+
+span {
+    position:absolute;
+    top:-2em;
+    right: 0.5em;
+ 
+    width: 1.5em;
+    height: 1.5em;
+ 
+    line-height:1.5em;
+    text-align:center;
+ 
+    ont-family:'Helvetica Neue', Helvetica, sans-serif;
+    font-weight:bold;
+    color:#fff;
+    text-shadow:0px 1px 0px rgba(0,0,0,.15);
+ 
+    -webkit-box-shadow:
+        inset 0px 1px 0px rgba(255,255,255,35),
+        0px 1px 1px rgba(0,0,0,.2);
+    -moz-box-shadow:
+        inset 0px 1px 0px rgba(255,255,255,.35),
+        0px 1px 1px rgba(0,0,0,.2);
+    box-shadow:
+        inset 0px 1px 0px rgba(255,255,255,.35),
+        0px 1px 1px rgba(0,0,0,.2);
+ 
+    -webkit-border-radius:4em;
+    -moz-border-radius:4em;
+    border-radius:4em;
+ 
+    opacity:0;
+filter: alpha(opacity=0);
+ 
+    -webkit-transition: .3s top ease-in, .3s opacity ease-in;
+    -moz-transition: .3s top ease-in, .3s opacity ease-in;
+    -o-transition: .3s top ease-in, .3s opacity ease-in;
+    -ms-transition: .3s top ease-in, .3s opacity ease-in;
+    transition: .3s top ease-in, .3s opacity ease-in;
+}
+.pink {
+    background-image: -webkit-linear-gradient(top, rgb(247, 130, 151), rgb(244, 102, 119));
+    background-image: -moz-linear-gradient(top, rgb(247, 130, 151), rgb(244, 102, 119));
+    background-image: -o-linear-gradient(top, rgb(247, 130, 151), rgb(244, 102, 119));
+    background-image: -ms-linear-gradient(top, rgb(247, 130, 151), rgb(244, 102, 119));
+    background-image: linear-gradient(top, rgb(247, 130, 151), rgb(244, 102, 119));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f78297', EndColorStr='#f46677');
+ 
+    border:1px solid #ce4f5e;
+}
+.yellow {
+    background-image: -webkit-linear-gradient(top, rgb(254, 218, 113), rgb(254, 186, 72));
+    background-image: -moz-linear-gradient(top, rgb(254, 218, 113), rgb(254, 186, 72));
+    background-image: -o-linear-gradient(top, rgb(254, 218, 113), rgb(254, 186, 72));
+    background-image: -ms-linear-gradient(top, rgb(254, 218, 113), rgb(254, 186, 72));
+    background-image: linear-gradient(top, rgb(254, 218, 113), rgb(254, 186, 72));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#feda71', EndColorStr='#feba48');
+ 
+    border:1px solid #dea94f;
+}
+.blue {
+    background-image: -webkit-linear-gradient(top, rgb(172, 228, 248), rgb(108, 205, 243));
+    background-image: -moz-linear-gradient(top, rgb(172, 228, 248), rgb(108, 205, 243));
+    background-image: -o-linear-gradient(top, rgb(172, 228, 248), rgb(108, 205, 243));
+    background-image: -ms-linear-gradient(top, rgb(172, 228, 248), rgb(108, 205, 243));
+    background-image: linear-gradient(top, rgb(172, 228, 248), rgb(108, 205, 243));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ace4f8', EndColorStr='#6ccdf3');
+ 
+    border:1px solid #79b5cb;
+}
+
+
+.formapdf { list-style: url("img/formapdf.png") square; }
+
+.tema{
+    font-family: Open Sans;
+    font-size: 44px;
+}

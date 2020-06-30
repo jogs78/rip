@@ -1,0 +1,275 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+    background: #efefef;
+    font-size:16px;
+    line-height: 20px;
+   
+    word-wrap:break-word !important;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+.borde{
+    border: 0;
+    background-color:#efefef; 
+} 
+    
+
+.tema {
+  color: #1431e5; 
+  font-size: 40px; 
+  margin-top: -75px;
+  text-align: center;
+  font: small-caps 200%/200% serif;  
+  
+}
+
+.principal{
+    padding-left: 15%;
+}    
+
+ /* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #7d83fc; 
+  color: white;
+  margin-bottom: 15px;
+  width: 980px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+} 
+
+/* The alert message box */
+
+/*==========0notificaciones===========*/
+
+.check{    
+    width: 50px;
+    text-align: center;
+}
+
+
+
+      .tabla-temporal{
+        float: right;
+        margin-top: 4.9%;
+        width: 57%;                                  
+        display: inline-block;
+      }
+          
+      .tabla-principal{      
+        width: 40%;
+        margin-left: -15%;
+        margin-top: 3%;
+      }
+      .contenido-mensaje{
+       width: 500px;
+       height: 50px;   
+       border: 2px solid #28b463;      
+       font-size: 15;
+      }
+
+      table {
+        text-align: left;
+        line-height: 35px;
+        border-collapse: separate;  
+        border: 2px solid #28b463;
+        border-radius: .25rem;
+
+      }
+
+      thead tr:first-child {
+      background: #82e0aa;
+      color: #000;
+      border: none;
+      } 
+
+
+      thead tr:last-child th {
+      border-bottom: 3px solid #ddd;
+      }
+
+      tbody tr:hover {
+        background-color: #f2f2f2;
+        cursor: default;
+      }
+
+      #myInput{
+        margin-left: 2%;
+      }
+        
+
+
+    
+/*========Notificaciones=========*/
+
+.search{
+/*    margin-left: 650px;*/
+    width: 250px;
+    height: 30px;
+    border-radius: 5px 5px 5px 5px;
+    background:  #f4f6f6;
+    border: 2px solid  #2471a3 ;
+    margin-bottom: 30px;
+    
+}
+
+.titulo{  
+
+  color: #000;
+  font-weight: 600;
+  padding-left: 10px;
+  text-decoration: none;
+
+}
+
+.btnNoti{    
+
+width: 100px;
+height: 30px;
+margin-bottom: 40px;
+
+}
+
+/*.contenido-mensaje{
+   width: 50%;
+   height: 50px;   
+   border: 2px solid #28b463;
+   margin-top: -2px;   
+   font-size: 15;
+}
+*/
+
+.receptor{
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+
+
+#container {
+    width: 67.5%;
+    padding-left:15%;
+}
+
+
+
+nav {
+    margin: 5px auto;
+    background-color: #3a9ba5;
+      
+  box-shadow: 0px 1px 1px 1px #fefefe;
+}
+
+nav ul {
+   
+    margin: 0 auto;
+    list-style: none;
+    position: relative;
+    /*text-align: center;*/
+}
+    
+nav ul li {
+    display:inline-block;
+    background-color: #3a9ba5;
+    }
+
+nav a {
+    display:block;
+    padding:0 40px; 
+    color:#000;
+    font-size:16px;
+    line-height: 60px;
+    text-decoration:none;
+}
+
+nav a:hover { 
+    background-color: #fff; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+    display: none;
+    position: absolute; 
+    top: 60px; /* the height of the main nav */
+}
+    
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display:inherit;
+}
+    
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+/* Second, Third and more Tiers */
+nav ul ul ul li {
+    position: relative;
+    top:-60px; 
+    left:170px;
+}
+
+    
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: -7px 0 0px 7px;
+    vertical-align: middle;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.cuenta{
+    background:  #1a5276  ;
+    pointer-events:none; 
+    opacity:1;  
+}
+.prodep{
+
+    padding-left: 700px;
+ 
+    display: inline-block;   
+}

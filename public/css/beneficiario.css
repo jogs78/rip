@@ -1,0 +1,41 @@
+
+.titulo{  
+
+  color: #000;
+  font-weight: 600;
+  text-align: left;
+
+
+}
+
+.info{
+  color:#000;
+  display: block;
+  margin-top: 3px;  
+  
+  width: auto;
+  height: auto;
+
+}
+
+.grupo{
+   margin: 10px;
+  margin-left: 11%;
+  width: 20%;
+  height: auto;
+  /*background: #d3d7da;  */
+  float:left;
+  margin-bottom: 10px;
+}
+
+.fecha{
+  text-align: center;
+  margin: 10px;
+  margin-left: 21%;
+  width: 55%;
+  height: 70px;
+  /*background: #d3d7da;  */
+  float:left;
+  margin-bottom: 10px;
+  background-color: #31a3df;
+}

@@ -1,0 +1,119 @@
+
+body{
+
+  font-family: 'Comic Sans MS', sans-serif;
+  background:#d2d9d6;
+}
+ .title {  
+                font-size: 44px;
+            }
+.link{
+  text-decoration:none;
+  display:inline-block;
+  margin:27px 28%;
+  text-transform:uppercase;
+  color:#858585;
+  font-weight:lighter;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+button{
+  cursor:pointer; 
+  display:inline-block;
+  width:15%;
+  height:40px; 
+  border:medium;
+  font-family: 'Open Sans', sans-serif;
+  text-transform:uppercase;
+  color:#1a237c;
+  -webkit-transition:.5s;
+  transition:.5s;
+  &:nth-of-type(1){
+    background:#673ab7;
+  }
+  &:nth-of-type(2){
+    background:#ff5722;
+  }
+  span{
+    position:absolute;
+    display:block;
+    margin:-10px 20%;
+    -webkit-transform:translateX(0);
+    transform:translateX(0);
+    -webkit-transition:.5s;
+    transition:.5s;
+  }
+  &:hover{
+    span{
+      -webkit-transform:translateX(30px);
+      transform:translateX(30px);
+      }
+   }
+}           
+
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
+
+             .form-center {
+                margin: 10px auto;
+                width: center;
+                text-align:center;
+                background-color: #76a07c;
+                 width: 424px;
+              }
+              .form-center input {
+              border: none;
+              height: 38px;  /* ancho de campos */
+              outline: none;
+              }
+
+            .content {
+                text-align: center;
+            }        
+
+            .links > a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .m-b-md {
+                margin-bottom: 15px;
+            }
+
+.imagenes{
+ margin-left: 5%;
+}
+h2{
+  /*padding:40px;*/
+  font-weight:lighter;
+  text-transform:uppercase;
+  color:#414141;
+  font-size: 15px;
+  margin-left: 40%;
+  margin-top: -20%;
+}
+
+.h2l{
+  /*padding:40px;*/
+  font-weight:lighter;
+  text-transform:uppercase;
+  color:#414141;
+  font-size: 15px;
+  margin-left: 40%; 
+}
+
+.btnrip{
+  margin-left: 40%;
+  margin-top: 10px;
+  background-color: #8c95e1; 
+
+}

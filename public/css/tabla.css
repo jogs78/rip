@@ -1,0 +1,131 @@
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+} 
+
+/* The alert message box */
+
+/*==========0notificaciones===========*/
+
+.check{
+    text-align: right;    
+    width: 50px;
+
+}
+
+table {
+  text-align: center;
+  margin-left: 15%;
+  line-height: 35px;
+  border-collapse: separate;
+  border-spacing: 0px auto;
+  border: 2px solid #28b463;
+  width: 800px;
+  /*margin: 50px auto;*/
+  margin-top: -70px;
+  border-radius: .25rem;
+}
+
+thead tr:first-child {
+  background: #82e0aa;
+  color: #000;
+  border: none;
+}
+
+th:first-child,
+td:first-child {
+  padding: 0px 15px 0px 20px;
+}
+
+th {
+  font-weight: 600;
+  color: #000;
+}
+
+thead tr:last-child th {
+  border-bottom: 3px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f2f2f2;
+  cursor: default;
+}
+
+tbody tr:last-child td {
+  border: none;
+}
+
+tbody td {
+  border-bottom: 1px solid #ddd;
+}
+
+td:last-child {
+  text-align: left;
+
+  
+}
+/*========Notificaciones=========*/
+
+.search{
+/*    margin-left: 650px;*/
+    width: 250px;
+    height: 30px;
+    border-radius: 5px 5px 5px 5px;
+    background:  #f4f6f6;
+    border: 2px solid  #2471a3 ;
+    margin-top: -50px;
+    
+}
+
+
+.titulo{  
+
+  color: #000;
+  font-weight: 600;
+  padding-left: 10px;
+  text-decoration: none;
+
+}
+
+.btnNoti{    
+position: absolute;
+width: 100px;
+height: 30px;
+margin-bottom: 40px;
+
+}
+
+.contenido-mensaje{
+   width: 500px;
+   height: 50px;   
+   border: 2px solid #28b463;
+   margin-top: -2px;   
+   font-size: 15;
+}
+
+
+.receptor{
+    margin-bottom: 20px;
+    width: 400px;
+}
+

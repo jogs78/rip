@@ -1,0 +1,250 @@
+.foto{       
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+   /* height: 100px;
+    width: 100px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    /*background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;*/
+    width:200px;
+    height:200px;
+    background-repeat: no-repeat;
+    background-position: 80%;
+    border-radius:50%;
+    background-size: 100% auto;
+    border:5px  solid #666 ;
+    font: Comic Sans MS,Arial,Verdana;
+        font-size: 5;
+        color: white;
+    }
+    .letras
+    {
+        font: small-caps 120%/200% serif;
+        font-size: 5;
+        color: black;
+        line-height:150%;
+
+    }
+    .social {
+    position: absolute; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+    /*para que siemore se muestre en pantalla es position:flex;*/
+    left: auto; ; /* Establecemos la barra en la izquierda */
+    top: 370px; /* Bajamos la barra 200px de arriba a abajo */
+    z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+
+}
+ 
+    .social ul {
+        list-style:none;
+    }
+ 
+    .social ul li a {
+        display:inline-block;
+        color:#fff;
+        background: #000;
+        padding: 45px 50px;
+        text-decoration: none;
+        -webkit-transition:all 500ms ease;
+        -o-transition:all 500ms ease;
+        transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+        float: left;
+    }
+ 
+    .social ul li .icon-facebook { background-image: url(http://e-spacios.com/images/icon_fb.png);}  /* Establecemos los colores de cada red social, aprovechando su class */ 
+    .social ul li .icon-instagram {background-image: url(https://lh3.googleusercontent.com/2sREY-8UpjmaLDCTztldQf6u2RGUtuyf6VT5iyX3z53JS4TdvfQlX-rNChXKgpBYMw=s100-rw);}
+    .social ul li .icon-twitter {background-image: url(https://lh3.googleusercontent.com/tT_cdvQunsvESsJKAwiEUFUrTDak8foyjX_DLgp3BdNiBcPsh5ttjHcAE0QapZnmOYlr=s100-rw);}
+    .social ul li .icon-youtube {background-image: url(https://lh3.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc=s100-rw);}
+    .social ul li .icon-whatsapp {background-image: url(https://lh3.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN=s100-rw);}
+    .social ul li .icon-mail {background-image: url(https://1.bp.blogspot.com/-J2QI2h5XFGo/XO6dLZXGaXI/AAAAAAAAEuM/clCfg6Ryczsvu1S4T77nb0JYbYaYSLsAACLcBGAs/s100-c/notEnvioProgramadoGmail_01.jpg);}
+ 
+    .social ul li a:hover {
+        /*background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+        padding: 48px 51px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+    }
+
+
+    .sticky-container{
+    padding:0px;
+    margin:-19px;
+    position:fixed;
+    right:-130px;
+    top:230px;
+    width:210px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    /*background-color:#000000;*/
+    color:#fdf9f9;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+.sticky li:hover{
+    margin-left:-73px;
+}
+.sticky li img{
+    float:left;
+    margin:5px 4px;
+    margin-right:15px;
+}
+.sticky li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
+}
+.sticky li p a{
+    text-decoration:none;
+    color:#000; /*color del subrayado de los iconos*/
+}
+.sticky li p a:hover{
+    text-decoration:underline;
+}
+
+
+
+
+* {
+    margin:0;
+    padding:0;
+}
+ 
+
+ul.ppt {  
+        position: relative;  
+    }  
+    .ppt li {  
+        list-style-type: none;  
+        position: fixed;  
+        top: 0;  
+        left: 0;  
+    }  
+      
+    .ppt img {  
+        border: 1px solid #e7e7e7;  
+        padding: 5px;  
+        background-color: #ececec;  
+    }  
+
+
+/*ventana moda*/ 
+
+
+ *{box-sizing:border-box}
+
+.slideshow-container{
+ max-width: 1000px;
+ position:relative;
+ align-self: center;
+}
+
+
+.mySlides{
+ display:none;
+}
+
+
+.prev, .next{
+ cursor:pointer;
+ position:absolute;
+ top:50%;
+ width:auto;
+ margin-top:-22px;
+ padding:16px;
+ color:white;
+ font-weight:bold;
+ font-size:18px;
+ transition:0.6s ease;
+ border-radius:0 3px 3px 0;
+}
+
+
+
+.next{
+ right:0;
+ border-radius:3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+ background-color:rgba(0,0,0,0.8);
+}
+
+.text{
+ color:#f2f2f2;
+ font-size:15px;
+ padding:8px 12px;
+ position:absolute;
+ bottom:8px;
+ width:100%;
+ text-align:center;
+}
+
+.numbertext{
+ color:#f2f2f2;
+ font-size:12px;
+ padding:8px 12px;
+ position:absolute;
+ top:0;
+}
+
+.fade{
+ -webkit-animation-name:fade;
+ -webkit-animation-duration:3s;
+ animation-name:fade;
+ animation-duration:3s;
+}
+
+@-webkit-keyframes fade{
+ from{opacity:.4}
+ to{opacity:1}
+}
+
+@keyframes fade{
+ from{opacity:.4}
+ to{opacity:1}
+}
+
+
+@font-face {
+  font-family:'flexslider-icon';
+  src: url('../fonts/flexslider-icon.eot');
+  src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.woff') 
+  format('woff'), url('../fonts/flexslider-icon.ttf') format('truetype'), url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.popup { 
+    visibility: hidden;
+ display: none; 
+ opacity: 0;
+  
+}  
+
+.popup:target {
+ visibility: visible; 
+ display: block; 
+
+left: 0; right: 0; 
+bottom: 0; margin: 0; 
+z-index: 999; transition: all 1s }
+
+
+
+.quinceañeras p{
+    font-family: Lato;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-size: 45px;
+    color: #fff;
+    font-weight: bold;
+}

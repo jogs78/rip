@@ -1,0 +1,314 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+    background: #efefef;
+    font-size:16px;
+    line-height: 20px;
+    color: #ffffff;
+    word-wrap:break-word !important;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+a {
+    color: #FFF;
+}
+
+
+#container {
+    width: 1090px;
+    padding-left:150px;
+}
+
+
+
+nav {
+    margin: 5px auto;
+    background-color: #3a9ba5;
+      
+  box-shadow: 0px 1px 1px 1px #fefefe;
+}
+
+nav ul {
+   
+    margin: 0 auto;
+    list-style: none;
+    position: relative;
+    /*text-align: center;*/
+}
+    
+nav ul li {
+    display:inline-block;
+    background-color: #3a9ba5;
+    }
+
+nav a {
+    display:block;
+    padding:0 20px; 
+    color:#FFF;
+    font-size:16px;
+    line-height: 60px;
+    text-decoration:none;
+}
+
+nav a:hover { 
+    background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+    display: none;
+    position: absolute; 
+    top: 60px; /* the height of the main nav */
+}
+    
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display:inherit;
+}
+    
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+/* Second, Third and more Tiers */
+nav ul ul ul li {
+    position: relative;
+    top:-60px; 
+    left:170px;
+}
+
+    
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: -7px 0 0px 7px;
+    vertical-align: middle;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.titulo{
+    background: green;
+    pointer-events:none; 
+    opacity:1;  
+}
+.prodep{
+
+    padding-left: 200px;
+ 
+    display: inline-block;   
+}
+
+/*h1 {
+  margin: 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #fff;
+  line-height: 1.2;
+  font-size: 2.2em;
+  font-weight: normal;
+}
+
+h1 span {
+  font-size: .7em;
+}*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,700);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+section {  
+  background:  #97bfb7 ;
+  width: 500px;
+  height: 100px;
+  margin-left: 90px;
+}
+
+
+.container {
+    background: linear-gradient(-20deg, #d0b782 20%, #a0cecf 80%);
+  font: 500 1.2em/1.2 'Roboto', sans-serif;
+  max-width: 900px;
+  border-top: 5px solid #435757;
+  background-color: rgba(255, 255, 255, .2);
+  /*box-shadow: 0 0 20px rgba(0, 0, 0, .1);*/
+  /*user-select: none;*/
+  margin: 10px;
+  margin-left: 160px;
+ 
+
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, .4);
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  counter-reset: done-items undone-items;
+}
+
+h2 {
+  position: relative;
+  margin: 5px;
+  padding: 5px 0;
+  font-size: 1.2em;
+}
+
+h2::before {
+  margin-top: 2000px;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: -20px;
+  width: 5px;
+  background-color: #435757;
+}
+
+h2::after {
+  display: block;
+  float: right;
+  font-weight: normal;
+}
+
+.done {
+  order: 1;
+}
+
+.done::after {
+  content: ' (' counter(done-items) ')';
+}
+
+.undone {
+  order: 3;
+}
+
+.undone::after {
+  content: ' (' counter(undone-items) ')';
+}
+
+/* hide inputs offscreen, but at the same vertical positions as the correpsonding labels, so that tabbing scrolls the viewport as expected */
+input {
+  display: block;
+  height: 53px;
+  margin: 0 0 -53px -9999px;
+  order: 4;
+  outline: none;
+  counter-increment: undone-items;
+}
+
+input:checked {
+  order: 2;
+  counter-increment: done-items;  
+}
+
+label {
+  /*display: block;*/
+  position: relative;
+  padding: 15px 0 15px 45px;
+  /*border-top: 1px dashed #fff;*/
+  order: 4;
+  cursor: pointer;
+  animation: undone .5s;
+}
+
+label::before {
+  
+  /*display: block;*/
+  /*position: absolute;*/
+  top: 11px;
+  left: 10px;
+  /*font: 1.5em 'FontAwesome';*/
+}
+
+label:hover, input:focus + label {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+input:checked + label {
+  order: 2;
+  animation: done .5s;
+}
+
+input:checked + label::before {
+  content: '\f058'; /* circle checkmark */
+}
+
+@keyframes done {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
+  }
+}
+
+@keyframes undone {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
+  }
+}
+
+
+button {
+  
+  margin: 40px auto 0;
+  padding: 5px 40px;
+  border: 2px solid #fff;
+  
+  background-color: #9ab593;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 280px;
+  
+}
